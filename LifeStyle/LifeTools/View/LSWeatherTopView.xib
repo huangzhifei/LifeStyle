@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LSWeatherTopView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cV-tD-OCH" userLabel="Weather label">
+                    <rect key="frame" x="216" y="162" width="16.5" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???????" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfo-9G-aBe" userLabel="PM label">
+                    <rect key="frame" x="53" y="102" width="56.5" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="????-??-??" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTn-PH-6nv" userLabel="Date label">
+                    <rect key="frame" x="53" y="70" width="76" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOu-DK-fU9" userLabel="Temperature label">
+                    <rect key="frame" x="53" y="132" width="25" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ee-f0-hsW" userLabel="weather">
+                    <rect key="frame" x="192" y="58" width="64" height="64"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="5Un-Yk-UXT"/>
+                        <constraint firstAttribute="height" constant="64" id="84E-HS-Jkw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFF-h8-Uaj" userLabel="City label">
+                    <rect key="frame" x="53" y="34" width="21.5" height="24"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3G-wu-OfQ" userLabel="Week Label">
+                    <rect key="frame" x="90.5" y="37" width="15.5" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89w-e8-8PC" userLabel="Wind label">
+                    <rect key="frame" x="53" y="162" width="16.5" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0078431372550000003" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7cV-tD-OCH" firstAttribute="centerX" secondItem="5Ee-f0-hsW" secondAttribute="centerX" id="7ij-LK-gUk"/>
+                <constraint firstItem="TTn-PH-6nv" firstAttribute="top" secondItem="D3G-wu-OfQ" secondAttribute="bottom" constant="16" id="DJ0-Yi-I32"/>
+                <constraint firstItem="D3G-wu-OfQ" firstAttribute="leading" secondItem="eFF-h8-Uaj" secondAttribute="trailing" constant="16" id="Ddm-ux-EhH"/>
+                <constraint firstItem="5Ee-f0-hsW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="58" id="Htd-CY-Uep"/>
+                <constraint firstItem="eFF-h8-Uaj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-96" id="Kkf-aS-MJt"/>
+                <constraint firstItem="dfo-9G-aBe" firstAttribute="leading" secondItem="eFF-h8-Uaj" secondAttribute="leading" id="LKf-D3-Y6x"/>
+                <constraint firstItem="7cV-tD-OCH" firstAttribute="baseline" secondItem="89w-e8-8PC" secondAttribute="baseline" id="MME-Gw-G9s"/>
+                <constraint firstItem="dfo-9G-aBe" firstAttribute="top" secondItem="TTn-PH-6nv" secondAttribute="bottom" constant="14" id="MYr-Q7-5Fq"/>
+                <constraint firstItem="TTn-PH-6nv" firstAttribute="leading" secondItem="eFF-h8-Uaj" secondAttribute="leading" id="SuE-E1-27X"/>
+                <constraint firstItem="7cV-tD-OCH" firstAttribute="top" secondItem="5Ee-f0-hsW" secondAttribute="bottom" constant="40" id="aC7-ln-PCe"/>
+                <constraint firstItem="5Ee-f0-hsW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="64" id="ax5-Gy-0Pz"/>
+                <constraint firstItem="TTn-PH-6nv" firstAttribute="top" secondItem="eFF-h8-Uaj" secondAttribute="bottom" constant="12" id="ceY-0l-JWL"/>
+                <constraint firstItem="tOu-DK-fU9" firstAttribute="top" secondItem="dfo-9G-aBe" secondAttribute="bottom" constant="12" id="fjb-GW-ZGo"/>
+                <constraint firstItem="89w-e8-8PC" firstAttribute="leading" secondItem="eFF-h8-Uaj" secondAttribute="leading" id="ir2-0u-shq"/>
+                <constraint firstItem="89w-e8-8PC" firstAttribute="top" secondItem="tOu-DK-fU9" secondAttribute="bottom" constant="12" id="oBs-j3-2gW"/>
+                <constraint firstItem="tOu-DK-fU9" firstAttribute="leading" secondItem="eFF-h8-Uaj" secondAttribute="leading" id="u8v-1i-YMR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cityLabel" destination="eFF-h8-Uaj" id="jeP-58-JMf"/>
+                <outlet property="dateLabel" destination="TTn-PH-6nv" id="cHW-Om-Jr6"/>
+                <outlet property="temperatureLabel" destination="tOu-DK-fU9" id="VIe-MX-9a4"/>
+                <outlet property="temperatureRangeLabel" destination="dfo-9G-aBe" id="KcJ-d0-agP"/>
+                <outlet property="weather" destination="5Ee-f0-hsW" id="Iok-dR-tmM"/>
+                <outlet property="weatherLabel" destination="7cV-tD-OCH" id="jU2-4z-iIu"/>
+                <outlet property="weekLabel" destination="D3G-wu-OfQ" id="W35-xM-PtN"/>
+                <outlet property="windLabel" destination="89w-e8-8PC" id="Ite-Et-ZHS"/>
+            </connections>
+            <point key="canvasLocation" x="85.5" y="92"/>
+        </view>
+    </objects>
+</document>

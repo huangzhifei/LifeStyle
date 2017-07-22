@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="444" id="KGk-i7-Jjw" customClass="LSRevenueCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="499.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcC-QF-C5g" userLabel="segView">
+                        <rect key="frame" x="8" y="44" width="304" height="447.5"/>
+                        <animations/>
+                    </view>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-ld-Td6">
+                        <rect key="frame" x="68" y="16" width="185" height="29"/>
+                        <animations/>
+                        <segments>
+                            <segment title="个人工资税收"/>
+                            <segment title="个人商户税收"/>
+                        </segments>
+                        <connections>
+                            <action selector="revenueChoose:" destination="KGk-i7-Jjw" eventType="valueChanged" id="PTn-gb-NZX"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="bsV-ld-Td6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Srv-QY-K21"/>
+                    <constraint firstItem="vcC-QF-C5g" firstAttribute="top" secondItem="bsV-ld-Td6" secondAttribute="bottom" id="Yle-kN-fim"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="vcC-QF-C5g" secondAttribute="leading" id="ZxL-4r-j1D"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vcC-QF-C5g" secondAttribute="bottom" id="j9d-Zn-WTp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vcC-QF-C5g" secondAttribute="trailing" id="kBC-zG-jY6"/>
+                    <constraint firstItem="bsV-ld-Td6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="nm5-d0-I34"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="segView" destination="vcC-QF-C5g" id="nsq-dW-GCo"/>
+            </connections>
+            <point key="canvasLocation" x="431" y="335"/>
+        </tableViewCell>
+    </objects>
+</document>

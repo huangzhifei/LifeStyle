@@ -7,16 +7,35 @@
 //
 
 #import "AppDelegate.h"
+#import "LSTabBarController.h"
+#import "LSLocationTool.h"
+#import "LSNearbyMetaDataTool.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) LSLocationTool *tool;
+@property (strong, nonatomic) LSTabBarController *tabVC;
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self initData];
+    
+    self.window = [[UIWindow alloc] initWithFrame:kScreen];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.tabVC = [[LSTabBarController alloc] init];
+    self.window.rootViewController = self.tabVC;
+    
+    [self.window makeKeyAndVisible];
+    
+    [self setDIYNavigationStyle];
+    
+    [self setTabItemTextColor];
+    
     return YES;
 }
 
@@ -40,6 +59,46 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - private Methods
+- (void)setTabItemTextColor
+{
+    //[[UITabBar appearance] setTintColor:[UIColor redColor]];
+    
+    // 设置UISearchBar cancelButton text color
+    [[UIBarButtonItem appearanceWhenContainedIn: [UISearchBar class], nil] setTintColor:[UIColor redColor]];
+    
+    [UITabBarItem.appearance setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[[UIColor whiteColor] colorWithAlphaComponent:0.85]}
+                                           forState:UIControlStateNormal];
+    
+    // then if StateSelected should be different, you should add this code
+    [UITabBarItem.appearance setTitleTextAttributes:
+     @{NSForegroundColorAttributeName : [UIColor redColor]}
+                                           forState:UIControlStateSelected];
+    
+}
+
+- (void)setDIYNavigationStyle
+{
+    UINavigationBar *bar = [UINavigationBar appearance];
+    
+    //设置显示的颜色
+    
+    bar.barTintColor = [UIColor colorWithRed:21/255.0 green:90/255.0 blue:19/255.0 alpha:1.0];
+    
+    //设置字体颜色
+    
+    bar.tintColor = [UIColor whiteColor];
+    
+    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+}
+
+- (void)initData
+{
+    [[LSNearbyMetaDataTool sharedLSNearbyMetaDataTool].location startLocation];
 }
 
 @end

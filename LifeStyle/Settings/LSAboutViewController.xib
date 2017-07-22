@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSAboutViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@huangzhifei2009@126.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dr-aC-aFZ">
+                    <rect key="frame" x="13" y="76" width="225" height="20.5"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开源地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRt-Gl-8ZY">
+                    <rect key="frame" x="123" y="178" width="74" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwT-4j-MhN">
+                    <rect key="frame" x="8" y="226" width="304" height="280"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">项目githut地址：https://github.com/huangzhifei
+
+下面感谢项目中用到的第三方库
+
+1、AFNetworking
+2、FMDB
+3、SDWebImage
+4、MJRefresh
+5、MJExtension
+6、MBProgrssHUD
+7、REMenu
+
+整个项目除掉三方库，有143个类，共计46000行代码，支持iOS8及以上，适配iphone5、5s、6、6p
+、6s、6sp等等，UI主要代码为主，xib为辅，多利用tablewView与collectionView来缓解布局压力。
+</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前版本1.0阶段" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZR-VT-zJd">
+                    <rect key="frame" x="182" y="117" width="123.5" height="20.5"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mwT-4j-MhN" secondAttribute="trailing" constant="8" id="6XO-gT-ywo"/>
+                <constraint firstAttribute="bottom" secondItem="mwT-4j-MhN" secondAttribute="bottom" constant="62" id="8l1-j2-jX6"/>
+                <constraint firstItem="mwT-4j-MhN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Mn8-0w-p50"/>
+                <constraint firstAttribute="trailing" secondItem="uRt-Gl-8ZY" secondAttribute="trailing" constant="123" id="SRR-ML-4uM"/>
+                <constraint firstAttribute="trailing" secondItem="HZR-VT-zJd" secondAttribute="trailing" constant="14.5" id="Uiw-QE-rWS"/>
+                <constraint firstItem="9Dr-aC-aFZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="VNJ-xT-SYG"/>
+                <constraint firstAttribute="bottom" secondItem="uRt-Gl-8ZY" secondAttribute="bottom" constant="369" id="doI-UI-qBG"/>
+                <constraint firstItem="mwT-4j-MhN" firstAttribute="top" secondItem="uRt-Gl-8ZY" secondAttribute="bottom" constant="27" id="lza-mo-dqR"/>
+                <constraint firstItem="9Dr-aC-aFZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="prd-pe-uLx"/>
+                <constraint firstAttribute="bottom" secondItem="HZR-VT-zJd" secondAttribute="bottom" constant="430.5" id="wHZ-CU-bvX"/>
+                <constraint firstItem="uRt-Gl-8ZY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="123" id="wqe-0c-XbF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-31" y="127"/>
+        </view>
+    </objects>
+</document>
